@@ -9,7 +9,7 @@ const UrlStats = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/urls/stats'); // Updated endpoint
+        const response = await axios.get('https://url-shortener-application-96re.onrender.com/urls/stats'); // Updated endpoint
         setStats(response.data);
       } catch (err) {
         setError('Failed to fetch URL stats');

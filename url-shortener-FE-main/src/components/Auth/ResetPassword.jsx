@@ -12,7 +12,7 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:3000/auth/reset-password/${token}`, formData);
+      await axios.post(`https://url-shortener-application-96re.onrender.com/auth/reset-password/${token}`, formData);
       setMessage('Password reset successfully.');
       setTimeout(() => {
         window.close();

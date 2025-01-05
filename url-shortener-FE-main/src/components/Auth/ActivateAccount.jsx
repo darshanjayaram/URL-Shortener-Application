@@ -14,7 +14,7 @@ const ActivateAccount = () => {
       try {
         setHasActivated(true); // Set the flag to prevent duplicate requests
         console.log('Sending activation request');
-        const response = await axios.get(`http://localhost:3000/auth/activate/${token}`);
+        const response = await axios.get(`https://url-shortener-application-96re.onrender.com/auth/activate/${token}`);
         setMessage(response.data.message);
         console.log('Activation response received');
         setTimeout(() => {
